@@ -1,9 +1,13 @@
 ![logo](./logos/SLAC-lab-hires.png)
-# Draft Template for SLAC repositories
+# Introduction
 
-This is a proposed template for SLAC software development.  
-We hope that this template can be used to encourage best practices in both code organization and SLAC/Stanford collaboration compliance.  
-The default state is set to 'private' but we are encouraging open sharing of DOE funded developments with funding attribution and potentially hosting at [OSTI DOE-CODE](https://www.osti.gov/doecode/).  
+The Test_LCW.py file contains code to generate a daily Excel version of the LCW status sheet.
+
+Modify the program prior to moving to production on a SLAC VM:  esh-rp-survey01 (C:\LCW\Prod_LCW.py):
+* Uncomment final line in program to turn on the email feature
+* After "############End Table 3", uncomment production (filename = "C:\\LCW\\LCW.xlsx" #prod) and comment test (filename = "C:\\Users\\ryanford\\OneDrive - SLAC National Accelerator Laboratory\\2025\\LCW.xlsx" #test).  
+* Save Prod_LCW.py to V drive (V:\ESH\OHP\Field Instruments), and copy to C:\LCW\Prod_LCW.py on the VM.
+
 
 # SLAC National Accelerator Laboratory
 The SLAC National Accelerator Laboratory is operated by Stanford University for the US Departement of Energy.  
